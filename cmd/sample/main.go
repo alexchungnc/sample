@@ -1,8 +1,12 @@
 package main
 
 import (
- "fmt"
+	"fmt"
+
+	"github.com/alexchungnc/sample/cmd/sample/server"
 )
-func main(){
-  fmt.Println("Hello")
+
+func main() {
+	fmt.Println("Hello")
+	server.StartServer()
 }

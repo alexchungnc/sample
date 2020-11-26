@@ -5,7 +5,7 @@ NAME=sample
 
 build:
 	echo "Building sample"
-	docker build -f cmd/sample/Dockerfile --tag ${NAME} cmd/sample
+	docker build -f cmd/sample/Dockerfile --tag ${NAME} .
 
 push:
 	docker tag ${NAME} alexchungnc/${NAME}

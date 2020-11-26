@@ -2,9 +2,10 @@ FROM golang:1.15.5 as builder
 
 WORKDIR /app
 COPY . .
-RUN GOOS=linux go build -o /app/sample ./main.go
+RUN ls -la ./*
+RUN GOOS=linux go build -o /app/sample ./cmd/sample/main.go
 
-EXPOSE 8748
+EXPOSE 8090
 
 CMD ["./sample"]
 
